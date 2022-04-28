@@ -66,7 +66,6 @@
 
 .project__detail__info__item i{
     font-size: 30px;
-    color: #137db7;
     margin-bottom: 16px;
 }
 
@@ -81,7 +80,7 @@
 }
 
 .project__detail__img{
-    width: 400px;
+    width: 700px;
     margin: 80px 0 30px;
 }
 
