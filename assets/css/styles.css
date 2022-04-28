@@ -876,6 +876,7 @@ a.btn-cta {
     margin: 0 50px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .project__slider__item {
@@ -930,7 +931,7 @@ a.btn-cta {
     transition: left .2s ease-out;
 }
 
-.project__detail{
+.project__detail a{
     padding: 8px 20px;
     background-color: rgb(59, 152, 255);
     color: #fff;
@@ -938,11 +939,12 @@ a.btn-cta {
     transition: all .25s ease, -webkit-transform .25s ease;
 }
 
-.project__detail:hover{
+.project__detail a:hover{
     box-shadow: 0 1rem 2.5rem rgb(22 28 45 / 10%), 0 0.5rem 1rem -0.75rem rgb(22 28 45 / 10%) !important;
     -webkit-transform: translate3d(0, -3px, 0);
     transform: translate3d(0, -3px, 0);
     background-color: #1746e0;
+    text-decoration: none;
 }
 
 .mySlides1{
