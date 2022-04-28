@@ -117,6 +117,13 @@ a.btn-cta {
     color: #258ec7;
 }
 
+.text__headersub{
+    color: #40babd;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
 .carousel-fade .carousel-inner .item {
     transition-property: opacity;
 }
@@ -766,7 +773,7 @@ a.btn-cta {
 /* ======= Service ======= */
 
 /* ======= Number ======= */
-#number {
+/* #number {
     padding-top: 50px;
     padding-bottom: 70px;
     background-color: var(--white-color);
@@ -794,6 +801,56 @@ a.btn-cta {
 .number__item__name {
     color: #777;
     font-weight: 100;
+} */
+
+.number-section{
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #48a5d8, #659bbb);
+}
+
+.number-section .curve-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    width: 150%;
+    height: 130%;
+    background: url("../images/curve/curve-top.svg") no-repeat center top;
+    background-size: contain;
+}
+
+.number-section .curve-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    width: 150%;
+    height: 130%;
+    background: url("../images/curve/curve-bottom.svg") no-repeat center bottom;
+    background-size: contain;
+}
+
+.data-box .icon{
+    font-size: 2rem;
+    font-weight: 300;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    padding-top: 6px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.data-box .number {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.data-box .desc {
+    font-size: 1.25rem;
 }
 
 /* Project */
@@ -825,6 +882,15 @@ a.btn-cta {
     position: relative;
     background-color: #fff;
 }
+
+.project__slider__item .text__headersub{
+    margin-bottom: 16px;
+}
+
+/* #project .text__headersub{
+    line-height: 35px;
+    height: 70px;
+} */
 
 /* Slideshow container */
 .project__slider__item:nth-child(2) {
@@ -862,6 +928,21 @@ a.btn-cta {
 
 #project__slides__text.shifting{
     transition: left .2s ease-out;
+}
+
+.project__detail{
+    padding: 8px 20px;
+    background-color: rgb(59, 152, 255);
+    color: #fff;
+    border-radius: 30px;
+    transition: all .25s ease, -webkit-transform .25s ease;
+}
+
+.project__detail:hover{
+    box-shadow: 0 1rem 2.5rem rgb(22 28 45 / 10%), 0 0.5rem 1rem -0.75rem rgb(22 28 45 / 10%) !important;
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+    background-color: #1746e0;
 }
 
 .mySlides1{
@@ -923,7 +1004,7 @@ a.btn-cta {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px 24px;
+    padding: 15px 24px;
     color: #fff !important;
     background-color: #5da7fc;
     font-weight: bold;
@@ -1156,18 +1237,36 @@ a.btn-cta {
 
 .team-section .story {
     margin: 0 auto;
-    margin-bottom: 60px;
-    max-width: 800px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.team-section .profile{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 50%;
 }
 
 .team-section .profile-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+}
+
+.team-section .member-content {
+    margin-top: 50px;
 }
 
 .team-section .members-wrapper {
     /* max-width: 800px; */
     margin: 0;
+}
+
+.team-section .item{
+    margin-top: 80px!important;
 }
 
 .team-section .item-inner {
@@ -1205,9 +1304,9 @@ a.btn-cta {
     color: #616670;
 }
 
-.team-section .social {
+/* .team-section .social {
     margin-bottom: 30px;
-}
+} */
 
 .team-section .social a {
     display: inline-block;
@@ -1222,12 +1321,12 @@ a.btn-cta {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #40babd;
+    /* background: #40babd; */
     padding-top: 3px;
-    color: #fff;
+    color: #137db7;
 }
 
-.team-section .social a.google {
+/* .team-section .social a.google {
     background: #dd4b39;
 }
 
@@ -1281,7 +1380,7 @@ a.btn-cta {
 
 .team-section .social a.medium:hover {
     background: #000;
-}
+} */
 
 .team-section .member-desc {
     color: #616670;
@@ -1292,7 +1391,8 @@ a.btn-cta {
 .contact-section {
     padding-top: 90px;
     padding-bottom: 90px;
-    /* background: #494d55 url("../images/map.png") no-repeat center center; */
+    background: #494d55 url("../images/contact/bg-contact.jpg") no-repeat center center;
+    background-size: cover;
     color: #fff;
 }
 
@@ -1312,16 +1412,17 @@ a.btn-cta {
 /* contact */
 #contact {
     position: relative;
-    display: flex;
+    /* display: flex; */
     min-height: 600px;
     /* margin-top: 100px; */
 }
 
 .contact__form {
     display: flex;
+    /* display: none; */
     flex-direction: column;
-    transform: translateY(-400px);
-    width: 60%;
+    /* transform: translateY(-400px); */
+    width: 46%;
     background-color: #fff;
     /* transform: translateX(50%); */
     border-top: 2px solid #3b98ff;
@@ -1330,7 +1431,7 @@ a.btn-cta {
     padding: 40px 70px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -300px;
+    /* margin-bottom: -300px; */
     color: #494d55;
     z-index: 1;
 }
@@ -1407,10 +1508,11 @@ a.btn-cta {
 }
 
 /* Footer */
-#footer {
+#footer {    
     position: relative;
     background: linear-gradient(0deg, #4cd4e3 0%, #3e69fe 100%);
     /* height: 800px; */
+    padding-top: 50px;
     color: #fff;
 }
 
@@ -1449,6 +1551,50 @@ a.btn-cta {
 .footer__top__logo__img{
     height: 100%;
 }
+
+/* ===== footer soccial ==== */
+.footer__top__social .list-inline-item{
+    font-size: 1.125rem;
+    background: #F5F7FA;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 2px;
+    background-color: #5d6778;
+}
+
+/* .footer__top__social .list-inline-item:nth-child(1){
+    background-color: #3b5a9a;
+}
+
+.footer__top__social .list-inline-item:nth-child(2){
+    background-color: #1aa9e1;
+}
+
+.footer__top__social .list-inline-item:nth-child(3){
+    background-color: #0073b2;
+}
+
+.footer__top__social .list-inline-item:nth-child(4){
+    background-color: #dd4b39;
+}
+
+.footer__top__social .list-inline-item:nth-child(5){
+    background-color: #dd4b39;
+} */
+
+.footer__top__social .text-link{
+    color: #fff;
+}
+
+.footer__top__social .list-inline-item:hover{
+    opacity: 0.8;
+}
+
+
+
+/* ===== // footer soccial ==== */
 
 .footer__top__address,
 .footer__top__work-time {
@@ -1540,6 +1686,10 @@ a.btn-cta {
 }
 
 @media (max-width: 767.98px) {
+    .col-0{
+        display: none;
+    }
+
     #header .container{
         max-width: unset;
     }
